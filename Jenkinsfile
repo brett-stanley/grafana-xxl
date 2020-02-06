@@ -1,7 +1,7 @@
 pipeline {
     agent { dockerfile true }
     stages {
-        stage('Test') {
+        stage('Build image') {
             steps {
               println("Made it here!")
             }
