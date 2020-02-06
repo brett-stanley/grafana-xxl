@@ -11,7 +11,7 @@ pipeline {
         branch 'master'
       }
       steps {
-        withDockerRegistry([ credentialsId: "docker-hub-credentials-iambrettstanley", url: "" ]) {
+        withDockerRegistry([ credentialsId: "docker-hub-credentials-iambrettstanley", url: "https://hub.docker.com/repository/docker/iambrettstanley/grafanaxxl" ]) {
           sh 'docker push iambrettstanley/grafanaxxl:latest'
         }
       }
